@@ -1,0 +1,24 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.805);
+    color: white;
+    font-weight: 300;
+    padding: 10px 200px;
+}
+.contact{
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+.contact img{
+    height: 30px;
+    width: 30px;
+}
+
+.text{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

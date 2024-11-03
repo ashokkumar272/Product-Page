@@ -1,0 +1,29 @@
+.container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* height: 300px; */
+    width: 200px;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.image{
+    height: 100px;
+    width: 100px;
+    border-radius: 999px;
+    overflow: hidden;
+    color: white;
+}
+.image img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.name{
+    font-weight: 500;
+}
+.comment{
+    font-weight: 300;
+}
