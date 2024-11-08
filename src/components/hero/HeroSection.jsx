@@ -30,6 +30,8 @@ const HeroSection = () => {
               </li>
             </ul>
           </div>
+          <div className={styles["menu-btn"]}>menu</div>
+
         </nav>
         <div className={styles.content}>
           <motion.div className={styles.tagline} {...fadeInUp}>

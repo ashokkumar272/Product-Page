@@ -10,8 +10,6 @@ h1{
 }
 .content{
     min-height: 100vh;
-    /* background-color: black; */
-    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -19,4 +17,9 @@ h1{
     padding: 100px;
     gap: 50px;
 }
-
+@media screen  and (max-width: 800px) {
+    .content{
+        
+        grid-template-columns: 1fr;
+  }
+}

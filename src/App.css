@@ -5,7 +5,7 @@
   font-family: "Ubuntu", serif;
   font-style: normal;
 }
-body{
+.body{
   background-image: url(./assets/background.png);
   background-size: cover;
   background-attachment: fixed;

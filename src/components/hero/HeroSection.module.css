@@ -1,8 +1,8 @@
 .container{
   min-height: 100vh;
   color: white;
-  background-color: rgba(0, 0, 0, 0.45);
-  /* background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); */
+  background-color: rgba(0, 0, 0, 0.42);
+  background-size: cover;
   display: flex;
   flex-direction: column;
 }
@@ -11,12 +11,8 @@
   .navbar {
     background-color: rgba(0, 0, 0, 0.75);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 80px;
-    padding-right: 130px;
     font-weight: 500;
     top: 0px;
   }
@@ -25,6 +21,23 @@
   .options{
     display: flex;
     align-items: center;
+  }
+  .menu-btn {
+    color: white; /* Customize as needed */
+    background-color: black;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: none;
+
+  }
+  @media screen and (max-width: 800px) {
+    .options{
+      display: none;
+    }
+    .menu-btn{
+      display: block;
+    }
   }
   
   .options ul {
@@ -56,33 +69,33 @@
     height: 110px;
   }
 
-  
+  .content{
+    display: flex;
+    flex-direction: column;
+    max-width: 970px;
+    padding: 0 50px;
+    margin: auto;
+    gap: 5vh;
+  }
   .tagline{
     color: white;
       font-weight: 500;
-      font-size: 3rem;
+      font-size: clamp(2rem,5vw, 3rem);
       text-align: center;
-      padding-top: 100px;
-      padding-bottom: 50px;
   }
   
   .intro{
     color: rgb(211, 211, 211);
     font-weight: 300;
-    font-size: 1.7rem;
+    font-size: clamp(1.7rem, 1rem + 5vw, 2rem);
     text-align: center;
-    width: 60vw;
-    margin: 50px auto;
   }
 
 .CTA{
-  width: 60vw;
-  margin: 50px auto;
   display: flex;
   justify-content: end;
-  padding: 0px 50px;
   align-items: center;
-  gap: 70px;
+  gap: 60px;
 }
 
 

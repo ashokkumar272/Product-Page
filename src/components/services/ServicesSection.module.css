@@ -20,6 +20,13 @@
   padding: 0px 120px;
   z-index: 1000;
   }
+
+  @media screen  and (max-width: 800px) {
+    .cards{
+      display: flex;
+    flex-direction: column;
+  }
+  }
   .card{
   cursor: pointer;
   height: 380px;
